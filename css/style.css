@@ -19,17 +19,17 @@ main{
 }
 .sidebar{
     height: 100%;
-    width: 150px;
+    width: 200px;
     background-color: black;
 }
 .main-content{
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: #141922;
     overflow-y: auto;
 }
 .top-bar{
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     height: 75px;
     position: fixed;
     top: 0;
@@ -71,7 +71,7 @@ main{
 .first-container{
     color: white;
     padding: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 
 
 }
@@ -90,8 +90,8 @@ main{
 
 }
 .first-section-img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin-right: 10px;
     margin-top: 20px;
     
@@ -111,3 +111,47 @@ main{
 .second-container p, .third-container p{
     color: gray;
 }
+
+
+/* SIDEBAR */
+.logo-sidebar{
+    width: 100%;
+    color: white;
+    font-size: 30px;
+
+    
+
+}
+#logo-spotify{
+    font-size: 100px;
+    /* filter: invert(100%); */
+    margin: 15px;
+    
+}
+
+.menu-sidebar{
+    color: white;
+    
+    
+}
+.menu-list{
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.icon-menu{
+    width: 30px;
+
+
+}
+li span{
+    position: relative;
+    bottom: 10px;
+    color: gray;
+
+}
+.playlist{
+
+}
+
+
