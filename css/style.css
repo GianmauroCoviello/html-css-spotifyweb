@@ -5,13 +5,13 @@
 }
 main{
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     display: flex;
 }
 /* UTILITIES */
 .bottom-bar{
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #282828;
     position: fixed;
     bottom: 0;
@@ -21,6 +21,9 @@ main{
     height: 100%;
     width: 200px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .main-content{
     width: calc(100% - 200px);
@@ -114,29 +117,26 @@ main{
 
 
 /* SIDEBAR */
+.top-sidebar{
+    padding-left: 15px;
+}
 .logo-sidebar{
     width: 100%;
     color: white;
-    font-size: 30px;
-
-    
-
 }
 #logo-spotify{
-    font-size: 100px;
-    /* filter: invert(100%); */
-    margin: 15px;
+    width: 130px;
+    margin: 15px 0;
     
 }
 
 .menu-sidebar{
-    color: white;
-    
-    
+    color: white;   
 }
 .menu-list{
-    padding-left: 15px;
+
     list-style-type: none;
+    padding-bottom: 20px;
 }
 
 .icon-menu{
@@ -144,14 +144,84 @@ main{
 
 
 }
-li span{
+.menu-list span{
     position: relative;
     bottom: 10px;
     color: gray;
 
 }
 .playlist{
+    width: 100%;
+    height: 30vh;
+    overflow-y: auto;
+    color: white;
+}
+.playlist-list{
+
+    list-style-type: none;
 
 }
+.playlist-list li{
+    padding-bottom: 5px;
+    color: gray;
 
 
+}
+.playlist-list i{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.playlist-list h4{
+    color: white;
+    padding-bottom: 10px;
+
+}
+.playlist-list li span:nth-child(2){
+    font-size: 21px;
+    position: relative;
+    bottom: 3px;
+    
+}
+.bottom-sidebar{
+    display: flex;
+    color: gray;
+    padding-left: 15px;
+    width: 100%;
+    flex-direction: column;
+
+}
+.content-download-sidebar{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: inline-flex;
+
+}
+.content-download-sidebar p{
+    padding-left: 5px;
+    padding-top: 2px;
+    
+}
+#download-bottom-sidebar{
+    width: 20px;
+    
+}
+.content-user-sidebar{
+    width: 100%;
+    display: inline-flex;
+    padding: 8px 0 5px 0;
+}
+#user-bottom-sidebar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    
+    
+}
+.content-user-sidebar h4{
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+}
