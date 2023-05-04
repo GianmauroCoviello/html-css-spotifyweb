@@ -6,23 +6,27 @@
 main{
     width: 100vw;
     height: calc(100vh - 100px);
-    background-color: #141922;
+    display: flex;
 }
 /* UTILITIES */
 .bottom-bar{
     width: 100%;
     height: 100px;
-    background-color: blue;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .sidebar{
     height: 100%;
     width: 150px;
     background-color: black;
 }
-.content-main{
+.main-content{
     width: calc(100% - 150px);
-    height: calc(100% - 100px);
-    background-color: grey;
+    height: 100%;
+    background-color: #141922;
+    overflow-y: auto;
 }
 .top-bar{
     width: calc(100% - 150px);
@@ -31,13 +35,79 @@ main{
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    text-align: end;
 }
-
-
-
-
+.row{
+    display: flex;
+}
 
 
 
 /* FINE UTILITIES */
 
+/* STYLE TOP-BAR */
+#button-top-bar{
+    margin-top: 15px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+   
+
+    
+}
+
+
+/* STYLE CONTENT-MAIN */
+.categories{
+    text-align: center;
+    padding-top: 90px;
+    color: gray;
+}
+.categories span{
+    padding-right: 15px;
+}
+
+.first-container{
+    color: white;
+    padding: 20px;
+    margin-bottom: 100px;
+
+
+}
+.second-container{
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+}
+.third-container{
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+}
+.first-section-img{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+}
+.song-img{
+    width: 100%;
+}
+.subtitle{
+    text-align: center;
+    padding-top: 10px;
+}
+.subtitle p{
+    color: gray;
+    padding-top: 5px;
+
+}
+.second-container p, .third-container p{
+    color: gray;
+}
