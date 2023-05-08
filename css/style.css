@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Montserrat', sans-serif;
 
 }
 main{
@@ -107,14 +108,32 @@ main{
 }
 .first-section-img{
     width: calc(100%/6);
-
     margin-right: 10px;
     margin-top: 20px;
+    position: relative;
     
 }
+
 .song-img{
     width: 100%;
+
 }
+
+.song-img-hover{
+    width: 100%;
+    filter: brightness(50%);
+    display: none;
+
+}
+.svg-hover{
+    width: 100px;
+    position: absolute;
+    top: 57%;
+    right: 30%;
+    transform: translate(-50, -50);
+    display: none;
+}
+
 .subtitle{
     text-align: center;
     padding-top: 10px;
@@ -282,10 +301,7 @@ main{
     
 }
 
-/* input{
-    cursor: none;
-    color: #141922;
-} */
+
 
 
 .content-col-20{
@@ -327,7 +343,7 @@ h6{
 
 }
 #button-top-bar:hover{
-    padding: 20px 50px;
+    padding: 15px 40px;
     border-radius: 40px;
 }
 .menu-list span:hover{
@@ -348,12 +364,15 @@ h6:hover{
     color: white;
 }
 
+.song-img:hover{
+    filter: brightness(50%);
+}
 
 
 
 
 /* MEDIA QUERY MOBILE */
-@media screen and ( max-width: 480px ) {
+@media screen and (max-width: 480px) {
     .bottom-bar{
         width: 100%;
         height: 75px;
@@ -408,6 +427,7 @@ h6:hover{
     }
     .first-container, .second-container, .third-container{
         margin-left: 20px;
+        
     }
     
     
@@ -415,7 +435,7 @@ h6:hover{
 }
 
 /* MEDIA QUERY TABLET */
-@media screen and ( max-width: 768px ) {
+@media screen and (max-width: 768px) {
     .bottom-bar{
         width: 100%;
         height: 75px;
@@ -461,7 +481,7 @@ h6:hover{
 
 
 /* MEDIA QUERY DESKTOP*/
-@media screen and ( max-width: 991px ) {
+@media screen and (max-width: 991px) {
     .bottom-bar{
         width: 100%;
         height: 75px;
